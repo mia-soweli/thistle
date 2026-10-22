@@ -27,6 +27,8 @@ thl_core_source_include += [ 'thistle_core' ]
 thl_core_source += [
 	'thistle_core/thistle_core/thistle_core.c',
 	'thistle_core/thistle_core/thistle_core.h',
+	'thistle_core/thistle_core/thistle_core_io.c',
+	'thistle_core/thistle_core/thistle_core_io.h',
 ]
 
 thl_core_source_include += [ 'thistle_core_p' ]
