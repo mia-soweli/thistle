@@ -1,6 +1,6 @@
 #include <thistle_core/thistle_core.h>
 
-th_visibility
+th_attr_export
 th_usize
 th_io_in_1(struct th_io *self, th_u1 *data)
 {
@@ -15,7 +15,7 @@ th_io_in_1(struct th_io *self, th_u1 *data)
 	return 0;
 }
 
-th_visibility
+th_attr_export
 th_usize
 th_io_in_1_take(struct th_io *self, th_u1 *data)
 {
@@ -36,7 +36,7 @@ th_io_in_1_take(struct th_io *self, th_u1 *data)
 	return 0;
 }
 
-th_visibility
+th_attr_export
 th_usize
 th_io_in_2(struct th_io *self, th_u2 *data)
 {
@@ -52,7 +52,7 @@ th_io_in_2(struct th_io *self, th_u2 *data)
 	return 0;
 }
 
-th_visibility
+th_attr_export
 th_usize
 th_io_in_2_take(struct th_io *self, th_u2 *data)
 {
@@ -74,7 +74,7 @@ th_io_in_2_take(struct th_io *self, th_u2 *data)
 	return 0;
 }
 
-th_visibility
+th_attr_export
 th_usize
 th_io_in_4(struct th_io *self, th_u2 *data)
 {
@@ -92,7 +92,7 @@ th_io_in_4(struct th_io *self, th_u2 *data)
 	return 0;
 }
 
-th_visibility
+th_attr_export
 th_usize
 th_io_in_4_take(struct th_io *self, th_u2 *data)
 {
