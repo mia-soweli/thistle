@@ -2,7 +2,7 @@
 CheckOptions: {}
 Checks: '-*,
 clang-analyzer-*,
-clang-analyzer-security-*
-clang-diagnostic-*
+clang-analyzer-security-*,
+clang-diagnostic-*,
 '
 ...
