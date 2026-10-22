@@ -1,0 +1,8 @@
+---
+CheckOptions: {}
+Checks: '-*,
+clang-analyzer-*,
+clang-analyzer-security-*
+clang-diagnostic-*
+'
+...
