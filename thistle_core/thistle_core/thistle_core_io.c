@@ -27,6 +27,12 @@ th_io_in_1_take(struct th_io *self, th_u1 *data)
 		return 1;
 	}
 
+	if (self->data_limit_o == self->data_limit_i)
+	{
+		self->state = th_io_state_i_end;
+		return 0;
+	}
+
 	return 0;
 }
 
@@ -57,6 +63,12 @@ th_io_in_2_take(struct th_io *self, th_u2 *data)
 		*data |= self->data_limit_o[0];
 		*data |= self->data_limit_o[1] << 8; self->data_limit_o += 2;
 		return 2;
+	}
+
+	if (self->data_limit_o == self->data_limit_i)
+	{
+		self->state = th_io_state_i_end;
+		return 0;
 	}
 
 	return 0;
@@ -93,6 +105,12 @@ th_io_in_4_take(struct th_io *self, th_u2 *data)
 		*data |= self->data_limit_o[2] << 12;
 		*data |= self->data_limit_o[3] << 16; self->data_limit_o += 4;
 		return 4;
+	}
+
+	if (self->data_limit_o == self->data_limit_i)
+	{
+		self->state = th_io_state_i_end;
+		return 0;
 	}
 
 	return 0;
