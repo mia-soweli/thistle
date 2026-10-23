@@ -1,8 +1,6 @@
 ---
 AttributeMacros:
-  - "tha_visibility"
-  - "tha_inline"
-  - "tha_inline_always"
+  - "th_attr_export"
 BreakAfterReturnType: TopLevelDefinitions
 BreakBeforeReturnType: TopLevelDefinitions
 BreakBeforeBinaryOperators: All
