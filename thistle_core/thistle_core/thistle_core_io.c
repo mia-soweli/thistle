@@ -76,7 +76,7 @@ th_io_in_2_take(struct th_io *self, th_u2 *data)
 
 th_attr_export
 th_usize
-th_io_in_4(struct th_io *self, th_u2 *data)
+th_io_in_4(struct th_io *self, th_u4 *data)
 {
 	*data = 0;
 
@@ -84,8 +84,8 @@ th_io_in_4(struct th_io *self, th_u2 *data)
 	{
 		*data |= self->data_limit_o[0];
 		*data |= self->data_limit_o[1] << 8;
-		*data |= self->data_limit_o[2] << 12;
-		*data |= self->data_limit_o[3] << 16;
+		*data |= self->data_limit_o[2] << 16;
+		*data |= self->data_limit_o[3] << 24;
 		return 4;
 	}
 
@@ -94,7 +94,7 @@ th_io_in_4(struct th_io *self, th_u2 *data)
 
 th_attr_export
 th_usize
-th_io_in_4_take(struct th_io *self, th_u2 *data)
+th_io_in_4_take(struct th_io *self, th_u4 *data)
 {
 	*data = 0;
 
@@ -102,8 +102,8 @@ th_io_in_4_take(struct th_io *self, th_u2 *data)
 	{
 		*data |= self->data_limit_o[0];
 		*data |= self->data_limit_o[1] << 8;
-		*data |= self->data_limit_o[2] << 12;
-		*data |= self->data_limit_o[3] << 16; self->data_limit_o += 4;
+		*data |= self->data_limit_o[2] << 16;
+		*data |= self->data_limit_o[3] << 24; self->data_limit_o += 4;
 
 		if (self->data_limit_o == self->data_limit_i)
 		{

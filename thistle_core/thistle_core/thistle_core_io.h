@@ -29,8 +29,7 @@ extern th_attr_export th_usize th_io_in_1(struct th_io *self, th_u1 *data);
 extern th_attr_export th_usize th_io_in_1_take(struct th_io *self, th_u1 *data);
 extern th_attr_export th_usize th_io_in_2(struct th_io *self, th_u2 *data);
 extern th_attr_export th_usize th_io_in_2_take(struct th_io *self, th_u2 *data);
-extern th_attr_export th_usize th_io_in_4(struct th_io *self, th_u2 *data);
-extern th_attr_export th_usize th_io_in_4_take(struct th_io *self, th_u2 *data);
-
+extern th_attr_export th_usize th_io_in_4(struct th_io *self, th_u4 *data);
+extern th_attr_export th_usize th_io_in_4_take(struct th_io *self, th_u4 *data);
 
 #endif
