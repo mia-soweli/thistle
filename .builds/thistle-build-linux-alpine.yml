@@ -1,0 +1,10 @@
+image: alpine/latest
+packages:
+  - meson
+sources:
+  - https://git.sr.ht/~soweli/thistle
+tasks:
+  - thistle: |
+      cd thistle
+      meson setup build
+      meson compile -C build
