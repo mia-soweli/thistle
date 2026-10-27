@@ -1,4 +1,4 @@
-project('thistle', 'c', version: '0', meson_version: '>=1.1.0', default_options: ['warning_level=3'])
+project('thistle', 'c', version: '0', meson_version: '>=1.1.0', default_options: ['c_std=c89','warning_level=3'])
 
 th_compiler_c = meson.get_compiler('c')
 th_compiler_c_args_link = []
@@ -8,10 +8,12 @@ th_compiler_c_args_link += th_compiler_c.get_supported_link_arguments()
 th_compiler_c_args += th_compiler_c.get_supported_arguments(
 	'-fvisibility=hidden',
 	'-fvisibility-inlines-hidden',
+	'-Werror=declaration-after-statement',
 	'-Werror=format-security',
 	'-Werror=format=2',
 	'-Werror=implicit',
 	'-Werror=implicit-fallthrough',
+	'-Werror=implicit-function-declaration',
 	'-Werror=incompatible-pointer-types',
 	'-Werror=strict-aliasing',
 	'-Wpedantic',
