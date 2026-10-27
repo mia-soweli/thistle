@@ -115,3 +115,46 @@ th_io_in_4_take(th_io *self, th_u4 *data)
 
 	return 0;
 }
+
+th_attr_export
+th_usize
+th_io_out_1(th_io *self, th_u1 data)
+{
+	if (self->data_limit_i + 1 <= self->data_limit_o)
+	{
+		*self->data_limit_i++ = data;
+		return 1;
+	}
+
+	return 0;
+}
+
+th_attr_export
+th_usize
+th_io_out_2(th_io *self, th_u2 data)
+{
+	if (self->data_limit_i + 2 <= self->data_limit_o)
+	{
+		self->data_limit_i[0] = data;
+		self->data_limit_i[1] = data >> 8; self->data_limit_i += 2;
+		return 2;
+	}
+
+	return 0;
+}
+
+th_attr_export
+th_usize
+th_io_out_4(th_io *self, th_u4 data)
+{
+	if (self->data_limit_i + 4 <= self->data_limit_o)
+	{
+		self->data_limit_i[0] = data;
+		self->data_limit_i[1] = data >> 8;
+		self->data_limit_i[2] = data >> 16;
+		self->data_limit_i[3] = data >> 24; self->data_limit_i += 4;
+		return 4;
+	}
+
+	return 0;
+}
