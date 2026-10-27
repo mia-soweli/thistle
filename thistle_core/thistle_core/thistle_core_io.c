@@ -2,7 +2,7 @@
 
 th_attr_export
 th_usize
-th_io_in_1(struct th_io *self, th_u1 *data)
+th_io_in_1(th_io *self, th_u1 *data)
 {
 	*data = 0;
 
@@ -17,7 +17,7 @@ th_io_in_1(struct th_io *self, th_u1 *data)
 
 th_attr_export
 th_usize
-th_io_in_1_take(struct th_io *self, th_u1 *data)
+th_io_in_1_take(th_io *self, th_u1 *data)
 {
 	*data = 0;
 
@@ -38,7 +38,7 @@ th_io_in_1_take(struct th_io *self, th_u1 *data)
 
 th_attr_export
 th_usize
-th_io_in_2(struct th_io *self, th_u2 *data)
+th_io_in_2(th_io *self, th_u2 *data)
 {
 	*data = 0;
 
@@ -54,7 +54,7 @@ th_io_in_2(struct th_io *self, th_u2 *data)
 
 th_attr_export
 th_usize
-th_io_in_2_take(struct th_io *self, th_u2 *data)
+th_io_in_2_take(th_io *self, th_u2 *data)
 {
 	*data = 0;
 
@@ -76,7 +76,7 @@ th_io_in_2_take(struct th_io *self, th_u2 *data)
 
 th_attr_export
 th_usize
-th_io_in_4(struct th_io *self, th_u4 *data)
+th_io_in_4(th_io *self, th_u4 *data)
 {
 	*data = 0;
 
@@ -94,7 +94,7 @@ th_io_in_4(struct th_io *self, th_u4 *data)
 
 th_attr_export
 th_usize
-th_io_in_4_take(struct th_io *self, th_u4 *data)
+th_io_in_4_take(th_io *self, th_u4 *data)
 {
 	*data = 0;
 
