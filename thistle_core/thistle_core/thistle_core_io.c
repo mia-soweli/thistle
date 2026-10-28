@@ -2,6 +2,19 @@
 
 th_attr_export
 th_usize
+th_io_in(th_io *self, th_u1 *data, th_usize data_size)
+{
+	if (self->data_limit_o + data_size <= self->data_limit_i)
+	{
+		memmove(data, self->data_limit_o, data_size); self->data_limit_o += data_size;
+		return data_size;
+	}
+
+	return 0;
+}
+
+th_attr_export
+th_usize
 th_io_in_1_peek(th_io *self, th_u1 *data)
 {
 	*data = 0;
@@ -111,6 +124,19 @@ th_io_in_4(th_io *self, th_u4 *data)
 		}
 
 		return 4;
+	}
+
+	return 0;
+}
+
+th_attr_export
+th_usize
+th_io_out(th_io *self, th_u1 *data, th_usize data_size)
+{
+	if (self->data_limit_i + data_size <= self->data_limit_o)
+	{
+		memmove(self->data_limit_i, data, data_size); self->data_limit_i += data_size;
+		return data_size;
 	}
 
 	return 0;
