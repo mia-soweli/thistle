@@ -46,6 +46,10 @@ thl_source_include += [ 'thistle' ]
 thl_source += [
 	'thistle/thistle/thistle.c',
 	'thistle/thistle/thistle.h',
+	'thistle/thistle/thistle_machine.c',
+	'thistle/thistle/thistle_machine.h',
+	'thistle/thistle/thistle_machine_op.c',
+	'thistle/thistle/thistle_machine_op.h',
 ]
 
 thl_core = library('thistle_core', sources: thl_core_source, include_directories: thl_core_source_include)

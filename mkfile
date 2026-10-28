@@ -16,9 +16,13 @@ thl_core_h=\
 thl=libthistle.a
 thl_o=\
 	thistle/thistle/thistle.$O\
+	thistle/thistle/thistle_machine.$O\
+	thistle/thistle/thistle_machine_op.$O\
 
 thl_h=\
 	thistle/thistle/thistle.h\
+	thistle/thistle/thistle_machine.h\
+	thistle/thistle/thistle_machine_op.h\
 
 all:V: $thl $thl_core
 
