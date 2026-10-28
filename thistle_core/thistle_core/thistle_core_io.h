@@ -7,12 +7,12 @@ enum th_io_state
 	th_io_state_none,
 	th_io_state_i,
 	th_io_state_i_end,
-	th_io_state_o,
+	th_io_state_o
 };
 
 enum th_io_state_flag
 {
-	th_io_state_flag_none,
+	th_io_state_flag_none
 };
 
 typedef enum th_io_state th_io_state;
