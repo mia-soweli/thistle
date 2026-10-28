@@ -3,6 +3,7 @@
 #define th_include_core_type_impl
 
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 
 typedef int8_t th_i1;
@@ -16,5 +17,7 @@ typedef uint16_t th_u2;
 typedef uint32_t th_u4;
 typedef uint64_t th_u8;
 typedef uintptr_t th_usize;
+
+#define nil NULL
 
 #endif
