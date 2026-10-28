@@ -3,6 +3,7 @@
 #define th_include_core_type_impl
 
 #include <stdint.h>
+#include <string.h>
 
 typedef int8_t th_i1;
 typedef int16_t th_i2;

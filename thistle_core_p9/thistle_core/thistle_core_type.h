@@ -3,6 +3,7 @@
 #define th_include_core_type_impl
 
 #include <u.h>
+#include <libc.h>
 
 typedef s8int th_i1;
 typedef s16int th_i2;
