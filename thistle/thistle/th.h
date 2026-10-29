@@ -4,7 +4,7 @@
 
 #include <thistle_core/th_core.h>
 
-#include <thistle/th_machine.h>
-#include <thistle/th_machine_op.h>
+#include <thistle/th_vm.h>
+#include <thistle/th_vm_op.h>
 
 #endif
