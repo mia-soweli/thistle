@@ -1,4 +1,4 @@
-#include <thistle_core/thistle_core.h>
+#include <thistle_core/th_core.h>
 
 th_attr_export
 th_usize

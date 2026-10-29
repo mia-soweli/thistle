@@ -27,16 +27,16 @@ thl_core_source = []
 
 thl_core_source_include += [ 'thistle_core' ]
 thl_core_source += [
-	'thistle_core/thistle_core/thistle_core.c',
-	'thistle_core/thistle_core/thistle_core.h',
-	'thistle_core/thistle_core/thistle_core_io.c',
-	'thistle_core/thistle_core/thistle_core_io.h',
+	'thistle_core/thistle_core/th_core.c',
+	'thistle_core/thistle_core/th_core.h',
+	'thistle_core/thistle_core/th_core.c',
+	'thistle_core/thistle_core/th_core_io.h',
 ]
 
 thl_core_source_include += [ 'thistle_core_p' ]
 thl_core_source += [
-	'thistle_core_p/thistle_core/thistle_core_type.h',
-	'thistle_core_p/thistle_core/thistle_core_type_attributes.h',
+	'thistle_core_p/thistle_core/th_core_type.h',
+	'thistle_core_p/thistle_core/th_core_type_attributes.h',
 ]
 
 thl_source_include = []
@@ -44,12 +44,12 @@ thl_source = []
 
 thl_source_include += [ 'thistle' ]
 thl_source += [
-	'thistle/thistle/thistle.c',
-	'thistle/thistle/thistle.h',
-	'thistle/thistle/thistle_machine.c',
-	'thistle/thistle/thistle_machine.h',
-	'thistle/thistle/thistle_machine_op.c',
-	'thistle/thistle/thistle_machine_op.h',
+	'thistle/thistle/th.c',
+	'thistle/thistle/th.h',
+	'thistle/thistle/th_machine.c',
+	'thistle/thistle/th_machine.h',
+	'thistle/thistle/th_machine_op.c',
+	'thistle/thistle/th_machine_op.h',
 ]
 
 thl_core = library('thistle_core', sources: thl_core_source, include_directories: thl_core_source_include)
