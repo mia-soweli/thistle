@@ -1,6 +1,6 @@
 </$objtype/mkfile
 
-CFLAGS=$CFLAGS -Ithistle_core -Ithistle_core_p9 -Ithistle
+CFLAGS=$CFLAGS -Ithistle_core -Ithistle_core/thistle_core_p9 -Ithistle
 
 thl_core=libthistle_core.a
 thl_core_o=\
@@ -10,8 +10,8 @@ thl_core_o=\
 thl_core_h=\
 	thistle_core/thistle_core/th_core.h\
 	thistle_core/thistle_core/th_core_io.h\
-	thistle_core_p9/thistle_core/th_core_type.h\
-	thistle_core_p9/thistle_core/th_core_type_attributes.h\
+	thistle_core/thistle_core_p9/thistle_core/th_core_type.h\
+	thistle_core/thistle_core_p9/thistle_core/th_core_type_attributes.h\
 
 thl=libthistle.a
 thl_o=\

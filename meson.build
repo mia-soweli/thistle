@@ -33,10 +33,10 @@ thl_core_source += [
 	'thistle_core/thistle_core/th_core_io.h',
 ]
 
-thl_core_source_include += [ 'thistle_core_p' ]
+thl_core_source_include += [ 'thistle_core/thistle_core_p' ]
 thl_core_source += [
-	'thistle_core_p/thistle_core/th_core_type.h',
-	'thistle_core_p/thistle_core/th_core_type_attributes.h',
+	'thistle_core/thistle_core_p/thistle_core/th_core_type.h',
+	'thistle_core/thistle_core_p/thistle_core/th_core_type_attributes.h',
 ]
 
 thl_source_include = []
