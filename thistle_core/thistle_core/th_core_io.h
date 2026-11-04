@@ -31,6 +31,8 @@ struct th_io
 
 typedef struct th_io th_io;
 
+extern th_attr_export void th_io_init(th_io *self, th_u1 *data, th_up data_size);
+
 extern th_attr_export th_up th_io_in(th_io *self, th_u1 *data, th_up data_size);
 extern th_attr_export th_up th_io_in_1(th_io *self, th_u1 *data);
 extern th_attr_export th_up th_io_in_2(th_io *self, th_u2 *data);

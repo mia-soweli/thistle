@@ -1,6 +1,16 @@
 #include <thistle_core/th_core.h>
 
 th_attr_export
+void
+th_io_init(th_io *self, th_u1 *data, th_up data_size)
+{
+	self->data = data;
+	self->data_limit = data + data_size;
+	self->data_limit_i = data + data_size;
+	self->data_limit_o = data;
+}
+
+th_attr_export
 th_up
 th_io_in(th_io *self, th_u1 *data, th_up data_size)
 {
