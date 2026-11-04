@@ -1,8 +1,8 @@
 #include <thistle_core/th_core.h>
 
 th_attr_export
-th_usize
-th_io_in(th_io *self, th_u1 *data, th_usize data_size)
+th_up
+th_io_in(th_io *self, th_u1 *data, th_up data_size)
 {
 	if (self->data_limit_o + data_size <= self->data_limit_i)
 	{
@@ -14,7 +14,7 @@ th_io_in(th_io *self, th_u1 *data, th_usize data_size)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_in_1_peek(th_io *self, th_u1 *data)
 {
 	*data = 0;
@@ -29,7 +29,7 @@ th_io_in_1_peek(th_io *self, th_u1 *data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_in_1(th_io *self, th_u1 *data)
 {
 	*data = 0;
@@ -50,7 +50,7 @@ th_io_in_1(th_io *self, th_u1 *data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_in_2_peek(th_io *self, th_u2 *data)
 {
 	*data = 0;
@@ -66,7 +66,7 @@ th_io_in_2_peek(th_io *self, th_u2 *data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_in_2(th_io *self, th_u2 *data)
 {
 	*data = 0;
@@ -88,7 +88,7 @@ th_io_in_2(th_io *self, th_u2 *data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_in_4_peek(th_io *self, th_u4 *data)
 {
 	*data = 0;
@@ -106,7 +106,7 @@ th_io_in_4_peek(th_io *self, th_u4 *data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_in_4(th_io *self, th_u4 *data)
 {
 	*data = 0;
@@ -130,8 +130,8 @@ th_io_in_4(th_io *self, th_u4 *data)
 }
 
 th_attr_export
-th_usize
-th_io_out(th_io *self, th_u1 *data, th_usize data_size)
+th_up
+th_io_out(th_io *self, th_u1 *data, th_up data_size)
 {
 	if (self->data_limit_i + data_size <= self->data_limit_o)
 	{
@@ -143,7 +143,7 @@ th_io_out(th_io *self, th_u1 *data, th_usize data_size)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_out_1(th_io *self, th_u1 data)
 {
 	if (self->data_limit_i + 1 <= self->data_limit_o)
@@ -156,7 +156,7 @@ th_io_out_1(th_io *self, th_u1 data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_out_2(th_io *self, th_u2 data)
 {
 	if (self->data_limit_i + 2 <= self->data_limit_o)
@@ -170,7 +170,7 @@ th_io_out_2(th_io *self, th_u2 data)
 }
 
 th_attr_export
-th_usize
+th_up
 th_io_out_4(th_io *self, th_u4 data)
 {
 	if (self->data_limit_i + 4 <= self->data_limit_o)

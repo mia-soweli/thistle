@@ -31,18 +31,18 @@ struct th_io
 
 typedef struct th_io th_io;
 
-extern th_attr_export th_usize th_io_in(th_io *self, th_u1 *data, th_usize data_size);
-extern th_attr_export th_usize th_io_in_1(th_io *self, th_u1 *data);
-extern th_attr_export th_usize th_io_in_2(th_io *self, th_u2 *data);
-extern th_attr_export th_usize th_io_in_4(th_io *self, th_u4 *data);
+extern th_attr_export th_up th_io_in(th_io *self, th_u1 *data, th_up data_size);
+extern th_attr_export th_up th_io_in_1(th_io *self, th_u1 *data);
+extern th_attr_export th_up th_io_in_2(th_io *self, th_u2 *data);
+extern th_attr_export th_up th_io_in_4(th_io *self, th_u4 *data);
 
-extern th_attr_export th_usize th_io_in_1_peek(th_io *self, th_u1 *data);
-extern th_attr_export th_usize th_io_in_2_peek(th_io *self, th_u2 *data);
-extern th_attr_export th_usize th_io_in_4_peek(th_io *self, th_u4 *data);
+extern th_attr_export th_up th_io_in_1_peek(th_io *self, th_u1 *data);
+extern th_attr_export th_up th_io_in_2_peek(th_io *self, th_u2 *data);
+extern th_attr_export th_up th_io_in_4_peek(th_io *self, th_u4 *data);
 
-extern th_attr_export th_usize th_io_out(th_io *self, th_u1 *data, th_usize data_size);
-extern th_attr_export th_usize th_io_out_1(th_io *self, th_u1 data);
-extern th_attr_export th_usize th_io_out_2(th_io *self, th_u2 data);
-extern th_attr_export th_usize th_io_out_4(th_io *self, th_u4 data);
+extern th_attr_export th_up th_io_out(th_io *self, th_u1 *data, th_up data_size);
+extern th_attr_export th_up th_io_out_1(th_io *self, th_u1 data);
+extern th_attr_export th_up th_io_out_2(th_io *self, th_u2 data);
+extern th_attr_export th_up th_io_out_4(th_io *self, th_u4 data);
 
 #endif
