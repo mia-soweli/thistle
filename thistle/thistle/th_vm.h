@@ -18,4 +18,12 @@ struct th_vm
 typedef struct th_vm th_vm;
 typedef struct th_vm_stack th_vm_stack;
 
+extern th_attr_export void th_vm_stack_in_1(th_vm_stack *self, th_u1 *data);
+extern th_attr_export void th_vm_stack_in_2(th_vm_stack *self, th_u2 *data);
+extern th_attr_export void th_vm_stack_in_4(th_vm_stack *self, th_u4 *data);
+
+extern th_attr_export void th_vm_stack_out_1(th_vm_stack *self, th_u1 data);
+extern th_attr_export void th_vm_stack_out_2(th_vm_stack *self, th_u2 data);
+extern th_attr_export void th_vm_stack_out_4(th_vm_stack *self, th_u4 data);
+
 #endif
